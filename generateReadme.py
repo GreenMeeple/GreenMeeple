@@ -16,8 +16,8 @@ def addIntro(f):
 </p>
 
 <p align="center"> M.Sc Cybersecurity at Saarland University, B.Eng Information Engineering at CUHK. </p>  
-<p align="center"> Experienced in C++, Python, and Full Stack Development </p>  
-<p align="center"> Cybersecurity Analyst, focus on LLM security.</p>  
+<p align="center"> Cybersecurity Analyst, focus on LLM security. Experienced in C++, Python, and Full Stack Development </p>  
+<p align="center"><a href="https://greenmeeple.github.io/about/resume.pdf" align="center">Personal Resume</a></p>
 
 
 ''' 
@@ -27,8 +27,8 @@ def addIntro(f):
 def addProjectInfo(f):
 	txt ='''
 ### Projects and Repos  
-- [Azul_Test](https://github.com/xindoo/eng-practices-cn)A C++ program based on a boardgame Azul by Michael Kiesling.
-- [MensaarLecker](https://github.com/GreenMeeple/MensaarLecker)A Web Crawler developed with Python and Selenium
+- [Azul_Test](https://github.com/xindoo/eng-practices-cn) A C++ program based on a boardgame Azul by Michael Kiesling.
+- [MensaarLecker](https://github.com/GreenMeeple/MensaarLecker) A Web Crawler developed with Python and Selenium
 - [hexo-zhruby](https://github.com/GreenMeeple/hexo-zhruby) A Hexo Tag plugin developed using Node.js
 - [Leetcode](https://github.com/GreenMeeple/Leetcode/index) LeetCode solution with Explanation  
    
