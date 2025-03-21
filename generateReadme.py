@@ -28,7 +28,7 @@ def addProjectInfo(f):
 	txt ='''
 ### Projects and Repos  
 - [Azul_Test](https://github.com/xindoo/eng-practices-cn) A C++ program based on a boardgame Azul by Michael Kiesling.
-- [MensaarLecker](https://github.com/GreenMeeple/MensaarLecker) A Web Crawler developed with Python and Selenium
+- [MensaarLecker](https://github.com/GreenMeeple/MensaarLecker) A fully automated scraper and static website for the Saarbrücken Mensa, powered by Python, Selenium, Google Sheets, and GitHub Actions.
 - [hexo-zhruby](https://github.com/GreenMeeple/hexo-zhruby) A Hexo Tag plugin developed using Node.js
 - [Leetcode](https://github.com/GreenMeeple/Leetcode/index) LeetCode solution with Explanation  
    
