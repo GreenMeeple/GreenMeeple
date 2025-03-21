@@ -25,11 +25,11 @@
 <td valign="top" width="33%">
 
 ### Personal Blog
+- [🍽 🥨 MensaarLecker -- A beloved tool to find out Mensa Ladies' favourite menu using Selenium🥨 🍽](https://greenmeeple.github.io/mensaar/)
 - [Automata, Games, and Verification (Portal)](https://greenmeeple.github.io/AGV/agv/)
 - [Leetcode Walkthrough (Portal 🚪)](https://greenmeeple.github.io/LeetCode/index/)
 - [3-hexo Shortcut](https://greenmeeple.github.io/3_hexo_Shortcut/)
-- [AGV 12.3 -- Complementation of Parity Tree Automata](https://greenmeeple.github.io/AGV/agv12-3/)
-- [AGV 12.2 -- Emptiness Game](https://greenmeeple.github.io/AGV/agv12-2/)
+- [MensaarLecker Development Walkthrough](https://greenmeeple.github.io/mensaar-walkthrough/)
 
 [More Posts](https://greenmeeple.github.io/)
 
