@@ -30,51 +30,52 @@ def addProjectInfo(f):
 - [Azul_Test](https://github.com/xindoo/eng-practices-cn) A C++ program based on a boardgame Azul by Michael Kiesling.
 - [MensaarLecker](https://github.com/GreenMeeple/MensaarLecker) A fully automated scraper and static website for the Saarbrücken Mensa, powered by Python, Selenium, Google Sheets, and GitHub Actions.
 - [hexo-zhruby](https://github.com/GreenMeeple/hexo-zhruby) A Hexo Tag plugin developed using Node.js
-- [Leetcode](https://github.com/GreenMeeple/Leetcode/index) LeetCode solution with Explanation  
+- [udsfahrplan](https://github.com/GreenMeeple/uds-fahrplan) A lightweight Telegram bot designed for Saarland University students
+- [hafas-bitmask-calculator](https://github.com/GreenMeeple/hafas-bitmask-calculator) A simple web-based tool to help you decode and encode bitmasks used by the HAFAS API.
    
 [More](https://github.com/GreenMeeple/)	 
 
 	''' 
 	f.write(txt) 
 
-def addBlogInfo(f):  
-	http = urllib3.PoolManager(num_pools=5, headers=headers)
-	resp = http.request('GET', blogUrl)
-	resp_tree = etree.HTML(resp.data.decode("utf-8"))
+from lxml import etree
+import urllib3
 
-	# Corrected XPath to select individual blog post links
-	html_data = resp_tree.xpath(".//nav[@id='title-list-nav']/a")
-	f.write("\n### Personal Blog\n")
+def addBlogInfo(f):
+    http = urllib3.PoolManager(num_pools=5, headers=headers)
+    resp = http.request('GET', blogUrl)
+    resp_tree = etree.HTML(resp.data.decode("utf-8"))
 
-	cnt = 0
-	for i in html_data: 
-		if cnt >= 5:
-			break
+    # Select all articles in the timeline
+    articles = resp_tree.xpath(".//div[@class='timeline']/article")
+    f.write("\n### Personal Blog\n")
 
-		# Extract title
-		title_list = i.xpath("./span[@class='post-title']/text()")
-		if not title_list:
-			print("Skipping an entry due to missing title")
-			continue  # Skip if title is missing
-		title = title_list[0].strip()
-		print(title)
+    cnt = 0
+    for article in articles:
+        if cnt >= 5:
+            break
 
-		# Extract URL
-		url_list = i.xpath('./@href')
-		if not url_list:
-			print("Skipping an entry due to missing URL")
-			continue  # Skip if URL is missing
-		url = url_list[0]  
+        # Extract title
+        title_list = article.xpath(".//p[@class='title']/a/text()")
+        if not title_list:
+            print("Skipping an entry due to missing title")
+            continue
+        title = title_list[0].strip()
 
-		# Append full URL if it's relative
-		if not url.startswith("http"):
-			url = f"https://greenmeeple.github.io{url}"
+        url_list = article.xpath(".//p[@class='title']/a/@href")
+        if not url_list:
+            print("Skipping an entry due to missing URL")
+            continue
+        url = url_list[0].strip()
 
-		item = f'- [{title}]({url})\n'
-		f.write(item)
-		cnt += 1
+        if not url.startswith("http"):
+            url = f"https://greenmeeple.github.io{url}"
 
-	f.write('\n[More Posts](https://greenmeeple.github.io/)\n')
+        item = f'- [{title}]({url})\n'
+        f.write(item)
+        cnt += 1
+
+    f.write('\n[More Posts](https://greenmeeple.github.io/)\n')
 
 if __name__=='__main__':
 	f = open('README.md', 'w+',encoding='utf-8')
