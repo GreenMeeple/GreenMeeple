@@ -16,7 +16,8 @@
 - [Azul_Test](https://github.com/xindoo/eng-practices-cn) A C++ program based on a boardgame Azul by Michael Kiesling.
 - [MensaarLecker](https://github.com/GreenMeeple/MensaarLecker) A fully automated scraper and static website for the Saarbrücken Mensa, powered by Python, Selenium, Google Sheets, and GitHub Actions.
 - [hexo-zhruby](https://github.com/GreenMeeple/hexo-zhruby) A Hexo Tag plugin developed using Node.js
-- [Leetcode](https://github.com/GreenMeeple/Leetcode/index) LeetCode solution with Explanation  
+- [udsfahrplan](https://github.com/GreenMeeple/uds-fahrplan) A lightweight Telegram bot designed for Saarland University students
+- [hafas-bitmask-calculator](https://github.com/GreenMeeple/hafas-bitmask-calculator) A simple web-based tool to help you decode and encode bitmasks used by the HAFAS API.
    
 [More](https://github.com/GreenMeeple/)	 
 
