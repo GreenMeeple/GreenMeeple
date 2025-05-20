@@ -65,7 +65,7 @@ def addBlogInfo(f):
         f.write(item)
         cnt += 1
 
-    f.write('\n[More Posts](https://greenmeeple.github.io/)\n')
+    f.write('- [More Posts](https://greenmeeple.github.io/)\n')
 
 if __name__=='__main__':
 	f = open('README.md', 'w+',encoding='utf-8')
