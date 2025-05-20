@@ -21,8 +21,7 @@
 - [🍽 🥨 MensaarLecker -- A beloved tool to find out Mensa Ladies' favourite menu using Selenium🥨 🍽](https://greenmeeple.github.io/projects/mensaar/)
 - [MensaarLecker Development Log (3) -- Telegram Bot Deployment and Integration](https://greenmeeple.github.io/projects/mensaar-log3/)
 - [UdS Fahrplan Bot Development Log (5) -- Explanations on bot sessions and requests](https://greenmeeple.github.io/projects/udsfahrplan-log5/)
-
-[More Posts](https://greenmeeple.github.io/)
+- [More Posts](https://greenmeeple.github.io/)
 
 </td>
 </tr></table>
