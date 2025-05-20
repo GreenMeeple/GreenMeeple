@@ -4,38 +4,28 @@ from lxml import etree
 import html
 import re
 
-blogUrl = 'https://greenmeeple.github.io/'
+blogUrl = 'https://greenmeeple.github.io/archives/'
 
 headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'} 
 
 def addIntro(f):
-	txt = '''  
-
-<p align="center">
-  <img src="https://github.com/greenmeeple/greenmeeple/blob/output/github-contribution-grid-snake.svg"/>
-</p>
-
+	txt = '''<p align="center"><img src="https://github.com/greenmeeple/greenmeeple/blob/output/github-contribution-grid-snake.svg"/></p>
 <p align="center"> M.Sc Cybersecurity at Saarland University, B.Eng Information Engineering at CUHK. </p>  
 <p align="center"> Cybersecurity Analyst, focus on LLM security. Experienced in C++, Python, and Full Stack Development </p>  
-<p align="center"><a href="https://greenmeeple.github.io/about/resume.pdf" align="center">Personal Resume</a></p>
-
-
-''' 
+<p align="center"><a href="https://greenmeeple.github.io/about/resume.pdf" align="center">Click here to check my personal CV</a></p>''' 
 
 	f.write(txt)
 
 def addProjectInfo(f):
 	txt ='''
-### Projects and Repos  
-- [Azul_Test](https://github.com/xindoo/eng-practices-cn) A C++ program based on a boardgame Azul by Michael Kiesling.
+### Projects and Repos
+
 - [MensaarLecker](https://github.com/GreenMeeple/MensaarLecker) A fully automated scraper and static website for the Saarbrücken Mensa, powered by Python, Selenium, Google Sheets, and GitHub Actions.
-- [hexo-zhruby](https://github.com/GreenMeeple/hexo-zhruby) A Hexo Tag plugin developed using Node.js
 - [udsfahrplan](https://github.com/GreenMeeple/uds-fahrplan) A lightweight Telegram bot designed for Saarland University students
 - [hafas-bitmask-calculator](https://github.com/GreenMeeple/hafas-bitmask-calculator) A simple web-based tool to help you decode and encode bitmasks used by the HAFAS API.
-   
-[More](https://github.com/GreenMeeple/)	 
-
-	''' 
+- [hexo-zhruby](https://github.com/GreenMeeple/hexo-zhruby) A Hexo Tag plugin developed using Node.js
+- [Azul_Test](https://github.com/xindoo/eng-practices-cn) A C++ program based on a boardgame Azul by Michael Kiesling.
+- [More Projects](https://github.com/GreenMeeple?tab=repositories)''' 
 	f.write(txt) 
 
 from lxml import etree
@@ -89,4 +79,3 @@ if __name__=='__main__':
 	f.write('\n</td>\n')
 	f.write('</tr></table>\n')
 	f.close 
-
