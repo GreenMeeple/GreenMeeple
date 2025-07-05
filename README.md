@@ -10,7 +10,7 @@
 - [udsfahrplan](https://github.com/GreenMeeple/uds-fahrplan) A lightweight Telegram bot designed for Saarland University students
 - [hafas-bitmask-calculator](https://github.com/GreenMeeple/hafas-bitmask-calculator) A simple web-based tool to help you decode and encode bitmasks used by the HAFAS API.
 - [hexo-zhruby](https://github.com/GreenMeeple/hexo-zhruby) A Hexo Tag plugin developed using Node.js
-- [Azul_Test](https://github.com/xindoo/eng-practices-cn) A C++ program based on a boardgame Azul by Michael Kiesling.
+- [Azul_Test](https://github.com/GreenMeeple/Azul_Test) A C++ program based on a boardgame Azul by Michael Kiesling.
 - [More Projects](https://github.com/GreenMeeple?tab=repositories)
 </td>
 <td valign="top" width="33%">
